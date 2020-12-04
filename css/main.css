@@ -43,11 +43,11 @@ h1 {
   text-align: center;
 }
 
-.banner {
+/* .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
+} */
 
 .banner-img {
   display: grid;
@@ -62,10 +62,19 @@ h1 {
 nav ul{
   list-style-type: none;
   display: flex;
-
 }
+
 .nav {
   display: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li {
+  padding-bottom: 1rem;
 }
 
 .nav-check {
@@ -75,13 +84,20 @@ nav ul{
 
 .nav-check:checked ~ .nav {
   display: block;
+  width: 100%;
+  padding-inline-start: 0px;
+  text-align: center;
 }
 
-.nav-label{
+.nav-label {
   cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 1rem;
 }
 
-main {
+
+/* main {
   background-color: #E7A504;
 }
 .order-btn {
@@ -105,4 +121,4 @@ main {
 .pizza-names {
  background-color: #E7A504;
  opacity: 70%;
-}
+} */
