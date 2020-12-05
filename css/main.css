@@ -129,6 +129,7 @@ main {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+  justify-items: center;
 }
 
 .menu-grid-inner {
@@ -142,6 +143,7 @@ main {
   border: 6px solid #B65C11;
   overflow: hidden;
   box-shadow: 0px 10px 10px rgba(136,136,136,.4);
+  max-width: 288px;
 }
 
 .menu-grid-item img {
@@ -149,9 +151,6 @@ main {
   width: 100%;
 }
 
-p {
-  color: #fff;
-}
 .menu-grid-item p{
   background-color: rgba(231,165,4,.7);
   padding: 1rem;
@@ -160,6 +159,7 @@ p {
   position: relative;
   margin-block: 0;
   margin-top: -4rem;
+  color: #fff;
 }
 
 .btn-rounded {
@@ -216,10 +216,44 @@ footer .order-btn {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+  font-size: 110%;
+  line-height: 1.4;
+}
+
+  .hidden-lg {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .nav li {
+    display: inline-block;
+    padding: 2rem;
+    padding-top: .5rem;
+    min-width: 120px;
+  }
+
+  .impact {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    background-size: contain;
+  }
+
+  .order-btn {
+    width: 160px;
+    height: 160px;
+
+  }
+
   .menu-grid {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
   }
 
@@ -227,6 +261,47 @@ footer .order-btn {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    gr
+  }
+
+  .menu-grid-item {
+    max-width: none;
+
+  }
+
+  .menu-grid-item img {
+    max-width:none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu-grid-item p{
+    margin-top: -3.8rem;
+  }
+
+  .btn-rounded {
+    max-width: 200px;
+  }
+
+  footer .btn-rounded {
+    margin-top: 1rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+
+  h2 span {
+    font-size: 2rem;
+  }
+
+  .footer-icons {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
 
 }
