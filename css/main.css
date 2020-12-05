@@ -214,6 +214,55 @@ footer .order-btn {
   margin-top: 2rem;
 }
 
+/* Menu Page */
+
+.pizza-size {
+  display: grid;
+}
+
+.pizza-menu-grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pizza-menu-grid-item-sizes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.pizza-menu-grid-item-no-ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.pizza-name {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.price-small {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.price-med {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.price-lg {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.ingredients {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+
 @media only screen and (min-width: 38em) {
 
   html {
@@ -303,5 +352,22 @@ footer .order-btn {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
+
+
+  .price-small {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .price-med {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .price-lg {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
 
 }
