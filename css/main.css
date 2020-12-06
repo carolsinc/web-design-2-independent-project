@@ -262,6 +262,37 @@ footer .order-btn {
   grid-row: 3;
 }
 
+.container-white {
+  background-color: #fff;
+  border: 6px solid #B65C11;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* contact page */
+.contact-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.container-about {
+  background-color: rgb(227, 194, 128);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+
+fieldset{
+border: none;
+}
+
+#map {
+height: 200px;
+}
+
 
 @media only screen and (min-width: 38em) {
 
@@ -367,6 +398,18 @@ footer .order-btn {
   .price-lg {
     grid-column: 4;
     grid-row: 2;
+  }
+
+  /* Contact page */
+
+  .contact-grid {
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .container-map {
+    grid-row: 2;
+    grid-column: 1 / 3;
   }
 
 

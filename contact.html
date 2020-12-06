@@ -7,6 +7,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- MAP IMPORTS -->
+    <script src="http://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 </head>
 <body>
   <header class="banner" role="banner">
@@ -37,6 +39,52 @@
   <section class="order-now">
     <a class="order-btn" href="">Order Now!</a>
   </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="container-white contact-grid">
+
+      <div class="container-about">
+        <h3>About</h3>
+        <p>Delicious, healthy affordabe and fresh food for you and your family. That’s what’s on our menu, and we are glad you’ve stopped by for a little taste.</p>
+        <p>You must try our famous pizza, fresh dough faily. We also offer gluten free dough. Take a look at our <a href="menu.html">menu</a>. Bon appetit!</p>
+      </div>
+
+      <div class="container-form">
+        <div class="container-address">
+          <p>Louis' Pizza</p>
+          <p>181 McArthur Ave.</p>
+          <p> Ottawa ON K1L 6P8</p>
+          <p><a href="tel: 613-741-0724">613-741-0724</a></p>
+        </div>
+        <form action=" " method="POST">
+          <fieldset>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" required>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+              <button class="btn-rounded" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="container-map">
+        <div id="map"></div>
+      </div>
+
+    </div>
+  </section>
 </main>
 
 <footer role="contentinfo">
@@ -49,4 +97,5 @@
 </footer>
 
 </body>
+  <script src="javascript/script.js"></script>
 </html>
