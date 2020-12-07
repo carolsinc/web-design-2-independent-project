@@ -13,6 +13,36 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skip-links > li::before {
+  content: none; /* Remove the bullets if nice lists is selected */
+}
+
+.skip-links a,
+.skip-links button {
+  padding: .5em .75em;
+  position: absolute;
+  top: -10em;
+  z-index: 10000; /* To make sure they're always on top */
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-links a:focus,
+.skip-links button:focus {
+  outline-offset: 3px;
+  top: 0;
+}
+
 body {
   margin: 0;
 }
@@ -70,7 +100,7 @@ nav li {
 .nav-check:checked ~ .nav {
   display: block;
   width: 100%;
-  padding-inline-start: 0px;
+  padding: 0px;
   text-align: center;
 }
 

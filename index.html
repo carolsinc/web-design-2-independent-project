@@ -9,11 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+  <ul class="skip-links">
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#nav">Jump to navigation</a></li>
+</ul>
   <header class="banner" role="banner">
 
-    <nav role="navigation">
-      <input type="checkbox" class="nav-check" id="nav-check">
-      <label class="nav-label" for="nav-check">
+    <nav role="navigation" id="nav" tabindex="0">
+      <input type="checkbox" name="nav-check" class="nav-check" id="nav-check">
+      <label class="nav-label" for="nfavicon.icoav-check">
         <svg class="hidden-lg" id="layer-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="47.7" height="35.7" viewBox="0 0 47.7 35.7">
           <rect width="47.7" height="9.54" fill="#fff"/>
           <rect y="13.1" width="47.7" height="9.54" fill="#fff"/>
@@ -28,7 +32,7 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main role="main" id="main" tabindex="0">
 
     <section class="impact">
       <h1>The Original <span>Louis' Pizza</span> Since 1960</h1>
