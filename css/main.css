@@ -111,6 +111,11 @@ nav li {
   padding: 1rem;
 }
 
+nav a:hover {
+  background-color: #fff;
+  color: #901b1b;
+}
+
 .impact {
   background-color: #901b1b;
   background-image: url("../images/halfpizza.png");
@@ -245,7 +250,7 @@ footer {
   margin: .5rem;
 }
 
-.footer-icons a svg {
+.footer-icons a img {
   width: 50px;
 }
 
