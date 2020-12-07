@@ -184,6 +184,11 @@ h2 span {
   font-size: 3rem;
 }
 
+.box-img {
+  border: 6px solid #B65C11;
+  max-width: 250px;
+}
+
 footer h2 {
   text-align: center;
   color: #fff;
@@ -360,6 +365,10 @@ height: 200px;
 
   .btn-rounded {
     max-width: 200px;
+  }
+
+  .box-img {
+    max-width: 500px;
   }
 
   footer .btn-rounded {
