@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 *, *::before, *::after {
@@ -45,10 +45,11 @@ html {
 
 body {
   margin: 0;
+  background-color: rgba(239, 220, 185, 1);
 }
 
 h2 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   text-align: center;
 }
 
@@ -57,15 +58,14 @@ img {
 }
 
 header {
-  background-color: #901B1B;
+  background-color: #901b1b;
 }
-
 
 h1 {
   color: white;
   text-align: center;
   margin: 0;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
 }
 
 h1 span {
@@ -73,7 +73,7 @@ h1 span {
   font-size: 3rem;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -100,7 +100,7 @@ nav li {
 .nav-check:checked ~ .nav {
   display: block;
   width: 100%;
-  padding: 0px;
+  padding: 0;
   text-align: center;
 }
 
@@ -112,35 +112,37 @@ nav li {
 }
 
 .impact {
-  background-color: #901B1B;
-    background-image: url(../images/halfpizza.png);
-    background-size: 100%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-bottom: 11rem;
-    box-shadow: 0px 10px 10px #888;
+  background-color: #901b1b;
+  background-image: url("../images/halfpizza.png");
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom: 11rem;
+  box-shadow: 0 10px 10px #888;
 }
 
 main {
-  background-color: rgba(239,220,185,1);
+  background-color: rgba(239, 220, 185, 1);
 }
+
 .order-now {
   position: relative;
   display: block;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   margin-top: -8rem;
 }
+
 .order-btn {
   width: 150px;
   height: 150px;
   background-color: #fff;
-  border: 11px solid #B65C11;
+  border: 11px solid #b65c11;
   border-radius: 82px;
   text-align: center;
   padding-top: 13px;
   display: block;
   position: relative;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   text-decoration: none;
   color: #000;
   font-size: 2.3rem;
@@ -149,9 +151,9 @@ main {
 }
 
 .home-menu,
-.find-us{
+.find-us {
   margin: 0 1rem;
-  text-align:center;
+  text-align: center;
   padding-bottom: 2rem;
 }
 
@@ -171,9 +173,9 @@ main {
 }
 
 .menu-grid-item {
-  border: 6px solid #B65C11;
+  border: 6px solid #b65c11;
   overflow: hidden;
-  box-shadow: 0px 10px 10px rgba(136,136,136,.4);
+  box-shadow: 0 10px 10px rgba(136, 136, 136, .4);
   max-width: 288px;
 }
 
@@ -182,8 +184,8 @@ main {
   width: 100%;
 }
 
-.menu-grid-item p{
-  background-color: rgba(231,165,4,.7);
+.menu-grid-item p {
+  background-color: rgba(231, 165, 4, .7);
   padding: 1rem;
   z-index: 9999;
   display: block;
@@ -196,18 +198,18 @@ main {
 .btn-rounded {
   background-color: #fff;
   color: #000;
-  border: 6px solid #B65C11;
+  border: 6px solid #b65c11;
   border-radius: 17px;
   text-align: center;
   font-size: 200%;
   text-decoration: none;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   padding: .5rem;
   display: block;
   margin: 0 auto;
   max-width: 75%;
   margin-top: 1rem;
-  box-shadow: 0px 10px 10px #888;
+  box-shadow: 0 10px 10px #888;
 }
 
 h2 span {
@@ -216,7 +218,7 @@ h2 span {
 }
 
 .box-img {
-  border: 6px solid #B65C11;
+  border: 6px solid #b65c11;
   max-width: 250px;
 }
 
@@ -226,8 +228,9 @@ footer h2 {
   padding-top: 2rem;
   margin: 0;
 }
+
 footer {
-  background-color: #901B1B;
+  background-color: #901b1b;
 }
 
 .footer-icons {
@@ -235,7 +238,7 @@ footer {
   text-align: center;
 }
 
-.footer-icons a{
+.footer-icons a {
   fill: #fff;
   display: inline-block;
   position: relative;
@@ -264,11 +267,6 @@ footer .order-btn {
   margin: 0;
 }
 
-.ingredients {
-  margin-bottom: 1rem;
-  color: rgb(127, 149, 86);
-}
-
 .pizza-menu-grid-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -283,6 +281,7 @@ footer .order-btn {
   color: rgb(127, 149, 86);
   font-weight: bold;
 }
+
 .pizza-menu-grid-item-no-ingredients {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -314,20 +313,23 @@ footer .order-btn {
 .ingredients {
   grid-column: 1 / -1;
   grid-row: 3;
+  margin-bottom: 1rem;
+  color: rgb(127, 149, 86);
 }
 
 .container-white {
   background-color: #fff;
-  border: 6px solid #B65C11;
+  border: 6px solid #b65c11;
   border-radius: 10px;
   margin: 1rem;
   padding: 1rem;
 }
 
 /* contact page */
+
 .contact-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr .5fr;
   grid-template-columns: 1fr;
 }
 
@@ -356,13 +358,8 @@ footer .order-btn {
   margin-top: 1rem;
 }
 
-body {
-  background-color: rgba(239,220,185,1);
-}
-
-
-fieldset{
-border: none;
+fieldset {
+  border: none;
 }
 
 form input, form textarea {
@@ -370,16 +367,15 @@ form input, form textarea {
 }
 
 #map {
-height: 200px;
+  height: 200px;
 }
-
 
 @media only screen and (min-width: 38em) {
 
   html {
-  font-size: 110%;
-  line-height: 1.4;
-}
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
   .hidden-lg {
     display: none;
@@ -407,7 +403,6 @@ height: 200px;
   .order-btn {
     width: 160px;
     height: 160px;
-
   }
 
   .menu-grid {
@@ -428,16 +423,15 @@ height: 200px;
 
   .menu-grid-item {
     max-width: none;
-
   }
 
   .menu-grid-item img {
-    max-width:none;
+    max-width: none;
     height: 100%;
     width: 100%;
   }
 
-  .menu-grid-item p{
+  .menu-grid-item p {
     margin-top: -3.8rem;
   }
 
@@ -471,7 +465,6 @@ height: 200px;
     justify-content: center;
   }
 
-
   .price-small {
     grid-column: 2;
     grid-row: 2;
@@ -503,6 +496,5 @@ height: 200px;
   fieldset {
     padding: 0;
   }
-
 
 }
